@@ -50,9 +50,10 @@ export async function POST(req: Request) {
     });
 
     const session = await hbClient.sessions.create({
-        profile: {
-            id: '2de12d0b-8843-42e1-a039-e17a9d6dff7e'
-        }
+        // Use a profile (for login data)
+        // profile: {
+        //     id: '2de12d0b-8843-42e1-a039-e17a9d6dff7e'
+        // }
     });
     
 
